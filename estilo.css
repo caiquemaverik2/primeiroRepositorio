@@ -22,15 +22,18 @@ h1{
 .formulario p{
     width: 100%;
 }
+
 .field{
     width: 100%;
     margin: 15px 0;
 }
+
 .field label{
     padding-left: 10px;
     display: inline;
     width: 150px;
 }
+
 input[type=text],
 input[type=email]{
     width: 100px;
@@ -57,16 +60,24 @@ input[placeholder]{
     font-size: 12px;
 }
 
-input[type=submit]{
-    display: block;
-    background-color: #ccc;
-    height: 25px;
+.button{
     border: none;
-    outline: 0;
-    cursor: pointer;
-    width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 8px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    outline: none;
+    background-color: #4bade8;
+    color: #fff;
     font-size: 12px;
+    box-shadow: 0 6px #999;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #525e90;
+}
+
+.button:active{
+    background-color: #525e90;
+    box-shadow: 0 2px #999;
+    transform: translateY(2px);
 }
