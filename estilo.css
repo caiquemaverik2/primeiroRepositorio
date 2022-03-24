@@ -22,18 +22,15 @@ h1{
 .formulario p{
     width: 100%;
 }
-
 .field{
     width: 100%;
     margin: 15px 0;
 }
-
 .field label{
     padding-left: 10px;
     display: inline;
     width: 150px;
 }
-
 input[type=text],
 input[type=email]{
     width: 100px;
@@ -60,6 +57,21 @@ input[placeholder]{
     font-size: 12px;
 }
 
+/*input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 25px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 12px;
+}
+estilização usado na aula 07 
+*/
 .button{
     border: none;
     border-radius: 15px;
@@ -71,11 +83,9 @@ input[placeholder]{
     box-shadow: 0 6px #999;
     cursor: pointer;
 }
-
 .button:hover{
     background-color: #525e90;
 }
-
 .button:active{
     background-color: #525e90;
     box-shadow: 0 2px #999;
