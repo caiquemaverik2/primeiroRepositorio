@@ -6,87 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Caíque Pereira da Silva">
     <meta name="description" content="Página inicial da disciplina Programação Básica para WEB">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
     <title>Programação Básica para WEB</title>
 </head>
 <body>
+
+    <nav>
+        <ul class="menu">
+        <li class="lista"><a href="index.html">Home</a></li>
+        <li class="lista"><a href="https://github.com/caiquemaverik2" target="_blank">Meus Projetos</a></li>
+        <li class="lista"><a href="#gradeCurricular">Grade Curricular</a></li>
+        <li class="lista"><a href="#nome">Entre em contato</a></li>
+        </ul>
+    </nav>
     
-    <section>
-        <h1>Caíque Pereira da Silva</h1>
-            <a href="https://www.linkedin.com/in/ca%C3%ADque-pereira-da-silva-41b0a3207/" target="_blank"><img src="foto_caique.jpg" 
-                alt="Foto do Caíque" style="border-radius:50%;" title="Conheça meu perfil no Linkedin"></a>
-            <p >Olá, sou o Caíque e tenho como a principal atividade estudante do curso Sistemas para Internet
-                no <abbr title="Instituto Federal de Ciências e Tecnologias do Tocantins">IFTO</abbr> campus Palmas-TO, <br>esportista por amor com o Principal
-                esporte o ciclismo na modalidade <abbr title="Mountain Bike">MTB</abbr>, atualmente com 27 anos
-                de idade.
-            </p>
-            <p><q>O pessimista se queixa do vento, o otimista espera que ele mude e o realista ajusta as velas.</q> - <a href="https://citacoes.in/autores/william-george-ward/" target="_blank"><cite>William George Ward</cite></a> </p>
-    </section>
-
-    <section>
-        <h2>Assuntos que está estudando atualmente</h2>
-            <ul>
-                <li><a href="https://www.cursoemvideo.com/curso/java-basico/" title="Comece sua carreira com Java" target="_blank">Java</a></li>
-                <li><a href="https://www.alura.com.br/artigos/o-que-e-front-end-e-back-end" title="Conheça o que é Front End" target="_blank">Front End</a></li>
-                <li><a href="https://www.w3schools.com/js/" title="Aprendendo JavaScript" target="_blank">JavaScript</a></li>
-            </ul>
-    </section>
-
-    <section>
-        <h2>Assuntos que você pretende estudar futuramente</h2>
-            <ul>
-                <li><a href="https://www.cursoemvideo.com/curso/java-basico/" title="Comece sua carreira com Java" target="_blank">Java</a></li>
-                <li><a href="https://www.youtube.com/watch?v=M57zuClvRbM" title="Vou aprender TypeScript" target="_blank">TypeScript</a></li>
-                <li><a href="https://www.youtube.com/watch?v=BGq2yTtoB8s" title="Videos sobre Edição" target="_blank">Edição</a></li>
-            </ul>
-    </section>
-
-    <section>
-        <table border="1" class="tabela">
-            <caption>2<sup>o</sup> SEMESTRE</caption>
-            <thead>
-                <tr>
-                    <th>Disciplina</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="bancoDados.html">Fundamentos e Projeto de Banco de Dados</a></td>
-                </tr>
-                <tr>
-                    <td><a href="analise.html">Análise de Sistemas</a></td>
-                </tr>
-                <tr>
-                    <td><a href="intProgramacao.html">Introdução à Programação</a></td>
-                </tr>
-                <tr>
-                    <td><a href="poo.html">Programação Orientada a Objetos</a></td>
-                </tr>
-                <tr>
-                    <td><a href="proWeb.html">Programação Básica para Web</a></td>
-                </tr>
-
-            </tbody>
-        </table>
-    </section>
-    <section><br>
-        <form class="formulario" method="post" action="" >
-            <p> Entre em contato</p>
-            <div class="field">
-                <label for="nome">Nome:</label> 
-                <input type="text" id="nome" name="nome" placeholder="Nome" required>
-            </div>
-            <div class="field">
-                <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" placeholder="E-Mail" required>
-            </div>
-            <div class="field">
-                <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
-            </div>
-            <input type="submit" name="acao" class="button" value="Enviar Mensagem!">
-        </form>
-    </section>
+    <article>
+        <section>
+            <h1>Caíque Pereira da Silva</h1>
+                <a href="https://www.linkedin.com/in/ca%C3%ADque-pereira-da-silva-41b0a3207/" target="_blank"><img src="imagem/foto_caique.jpg"
+                    alt="Foto do Caíque" style="border-radius:50%;" title="Conheça meu perfil no Linkedin"></a>
+                <p >Olá, sou o Caíque e tenho como a principal atividade estudante do curso Sistemas para Internet
+                    no <abbr title="Instituto Federal de Ciências e Tecnologias do Tocantins">IFTO</abbr> campus Palmas-TO, <br>esportista por amor com o Principal
+                    esporte o ciclismo na modalidade <abbr title="Mountain Bike">MTB</abbr>, atualmente com 27 anos
+                    de idade.
+                </p>
+                <p><q>O pessimista se queixa do vento, o otimista espera que ele mude e o realista ajusta as velas.</q> - <a href="https://citacoes.in/autores/william-george-ward/" target="_blank"><cite>William George Ward</cite></a> </p>
+        </section>
+        <section>
+            <h2>Assuntos que está estudando atualmente</h2>
+                <ul>
+                    <li><a href="https://www.cursoemvideo.com/curso/java-basico/" title="Comece sua carreira com Java" target="_blank">Java</a></li>
+                    <li><a href="https://www.alura.com.br/artigos/o-que-e-front-end-e-back-end" title="Conheça o que é Front End" target="_blank">Front End</a></li>
+                    <li><a href="https://www.w3schools.com/js/" title="Aprendendo JavaScript" target="_blank">JavaScript</a></li>
+                </ul>
+        </section>
+        <section>
+            <h2>Assuntos que você pretende estudar futuramente</h2>
+                <ul>
+                    <li><a href="https://www.cursoemvideo.com/curso/java-basico/" title="Comece sua carreira com Java" target="_blank">Java</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=M57zuClvRbM" title="Vou aprender TypeScript" target="_blank">TypeScript</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=BGq2yTtoB8s" title="Videos sobre Edição" target="_blank">Edição</a></li>
+                </ul>
+        </section>
+        <section>
+            <table border="1" class="tabela" id="gradeCurricular">
+                <caption>2<sup>o</sup> SEMESTRE</caption>
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="bancoDados.html">Fundamentos e Projeto de Banco de Dados</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="analise.html">Análise de Sistemas</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="intProgramacao.html">Introdução à Programação</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="poo.html">Programação Orientada a Objetos</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="proWeb.html">Programação Básica para Web</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section><br>
+            <form class="formulario" method="post" action="" >
+                <p> Entre em contato</p>
+                <div class="field">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+                <div class="field">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                </div>
+                <div class="field">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+                </div>
+                <input type="submit" name="acao" class="button" value="Enviar Mensagem!">
+            </form>
+        </section>
+    </article>
 
     
 </body>
