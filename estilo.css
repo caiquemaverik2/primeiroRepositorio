@@ -1,70 +1,135 @@
-.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #4bade8;
-    position: fixed;
-    top: 0;
+#navegacao-principal {
+    position: relative;
+    font-family: monospace;
+    float: left;
     width: 100%;
-    border-radius: 10px;
-    font-size: 15px;
-}   
-.lista {
-    float: left; 
-    border-radius: 10px;
-}    
-.lista a{
+
+}
+
+#menu-principal {
+    list-style: none;
+    padding-left: 0;
+    position: fixed;
+
+}
+
+#menu-principal li {
+    background-color: #4bade8;
     display: block;
-    color: #FFF;
-    text-align: center;
-    padding: 14px 16px;
+    float: left;
+    padding: 1rem;
+    position: relative;
     text-decoration: none;
-    border-radius: 10px;
-}    
-.lista a:hover{
-    color: #FFF;
+    transition-duration: 0.5s;
+
+}
+
+#menu-principal li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0 0, 0.25);
+}
+
+.dropdown li {
+    clear: both;
+    width: 100%;
+}
+
+#menu-principal li:hover,
+#menu-principal li:focus-within {
     background-color: #525e90;
-    border-radius: 10px;
-}   
-article{
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+#menu-principal li a:hover {
+    color: #333;
+}
+
+#menu-principal li:hover>ul,
+#menu-principal li:focus-within>ul,
+.dropdown ul:hover,
+.dropdown ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    padding: 0;
+    width: 78%;
+}
+
+article {
     padding: 16px;
-    margin-top:30px;
+    margin-top: 8px;
     height: 1500px;
     font-size: 12px;
-    width: 500px;
-    margin: 0 auto;
 }
-.active{
+
+img {
+    border-radius: 50%;
+    border: 5px solid #4bade8;
+}
+
+img:hover {
+    border: 5px solid #525e90;
+}
+
+/*.active{
     background-color: #4CAF50;
 }
-h1{
+
+ Verificar se a erro 
+ 
+ */
+h1 {
     font-size: 30px;
+    /*margin-top: 40px;*/
 }
-.tabela{
+
+.tabela {
     width: 410px;
     padding: 30px;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
 }
-.formulario{
+
+.formulario {
     width: 350px;
     padding: 30px;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin: 0 auto;
+
 }
-.formulario p{
+
+.formulario p {
     width: 100%;
 }
-.field{
+
+.field {
     width: 100%;
     margin: 15px 0;
 }
-.field label{
+
+.field label {
     padding-left: 10px;
     display: inline;
     width: 150px;
 }
+
 input[type=text],
-input[type=email]{
+input[type=email] {
     width: 100px;
     padding-left: 10px;
     height: 18px;
@@ -73,7 +138,8 @@ input[type=email]{
     border: 1px solid #ccc;
     outline: none;
 }
-textarea{
+
+textarea {
     width: 100%;
     line-height: 10px;
     padding: 10px;
@@ -83,10 +149,12 @@ textarea{
     border: 1px solid #ccc;
     outline: none;
 }
-input[placeholder]{
+
+input[placeholder] {
     font-size: 12px;
 }
-.button{
+
+.button {
     border: none;
     border-radius: 15px;
     padding: 10px 15px;
@@ -97,11 +165,36 @@ input[placeholder]{
     box-shadow: 0 6px #999;
     cursor: pointer;
 }
-.button:hover{
+
+.button:hover {
     background-color: #525e90;
 }
-.button:active{
+
+.button:active {
     background-color: #525e90;
     box-shadow: 0 2px #999;
     transform: translateY(2px);
+}
+
+.tabela a {
+    color: #4bade8;
+    text-decoration: none;
+}
+
+.tabela a:hover {
+    cursor: pointer;
+    background-color: #525e90;
+    color: #ccc;
+}
+
+.atualEstudo a {
+    color: #4bade8;
+    text-decoration: none;
+}
+
+.atualEstudo a:hover {
+    cursor: pointer;
+    background-color: #525e90;
+    color: #ccc;
+
 }
