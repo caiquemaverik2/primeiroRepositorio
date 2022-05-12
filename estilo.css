@@ -229,7 +229,7 @@ input[placeholder] {
 @media screen and (max-width: 480px) {
     boby {
         max-width: 480px;
-        font-size: 1.0em;
+        font-size: 0.9em;
     }
 
     #menu-principal {
@@ -285,16 +285,19 @@ input[placeholder] {
         font-size: 1.1em;
         padding: 0%, 0%;
     }
+    h2{
+        font-size: 1em;
+    }
 
     .tabela {
-        width: 361px;
-        padding: 10px;
+        width: 86vw;
+        padding: 8px;
     }
 
     .formulario {
         padding: 30px;
         border: 1px solid #ccc;
-        width: 300px;
+        width: 70vw;
         margin: 0 auto;
         text-align: left;
     }
