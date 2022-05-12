@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Caíque Pereira da Silva">
     <meta name="description" content="Página inicial da disciplina Programação Básica para WEB">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
     <title>Programação Básica para WEB</title>
 </head>
 
 <body>
     <nav id="navegacao-principal">
         <ul id="menu-principal">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#navegacao-principal">Home</a></li>
             <li><a href="https://github.com/caiquemaverik2" target="_blank">Meus Projetos</a></li>
             <li><a href="#gradeCurricular">Grade Curricular</a>
                 <ul class="dropdown">
@@ -39,11 +40,12 @@
         <section id="home"> <br>
             <h1>Caíque Pereira da Silva</h1>
             <a id="foto_caique" href="https://www.linkedin.com/in/ca%C3%ADque-pereira-da-silva-41b0a3207/"
-                target="_blank"><img src="foto_caique.jpg" alt="Foto do Caíque"
-                    title="Conheça meu perfil no Linkedin"></a>
-            <p>Olá, sou o Caíque e tenho como a principal atividade estudante do curso Sistemas para Internet
+                target="_blank"><img srcset="foto_caique150.jpg 360w, foto_caique.jpg 1920w"
+                    sizes="(max-width:480px) 360 px, (max-width:1280px) 1280px" src="foto_caique.jpg"
+                    alt="Foto do Caíque" title="Conheça meu perfil no Linkedin"></a>
+            <p id="sobre">Olá, sou o Caíque e tenho como a principal atividade estudante do curso Sistemas para Internet
                 no <abbr title="Instituto Federal de Ciências e Tecnologias do Tocantins">IFTO</abbr> campus Palmas-TO,
-                <br>esportista por amor com o Principal
+                esportista por amor com o Principal
                 esporte o ciclismo na modalidade <abbr title="Mountain Bike">MTB</abbr>, atualmente com 27 anos
                 de idade.
             </p>
@@ -119,7 +121,25 @@
             </form>
         </section>
     </article>
-
+    <script>
+        const numero = prompt("Digite um numero e tecle enter");
+        if (numero > 0) {
+            if (numero % 2 == 0) {
+                alert(numero + " é positivo e par.");
+            }
+            else {
+                alert(numero + " é positivo e impar.");
+            }
+        }
+        else if (numero < 1) {
+            if (numero == 0) {
+                alert(numero + " Não é positivo e nem negativo, tente novamente.");
+            }
+            else {
+                alert(numero + " é negativo...");
+            }
+        }
+    </script>
 
 </body>
 
